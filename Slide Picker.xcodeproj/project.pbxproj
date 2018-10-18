@@ -97,6 +97,7 @@
 		429F770F2178C105001455F0 /* Slide Picker */ = {
 			isa = PBXGroup;
 			children = (
+				429F773E2178C20E001455F0 /* New Group */,
 				429F77102178C105001455F0 /* AppDelegate.swift */,
 				429F77122178C105001455F0 /* ViewController.swift */,
 				429F77142178C105001455F0 /* Main.storyboard */,
@@ -123,6 +124,13 @@
 				429F77322178C10A001455F0 /* Info.plist */,
 			);
 			path = "Slide PickerUITests";
+			sourceTree = "<group>";
+		};
+		429F773E2178C20E001455F0 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
