@@ -7,12 +7,28 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
-
+    
+    private let gradient = GradientView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setup()
+    }
+
+    func setup() {
+        setupGradientView()
+    }
+    
+    func setupGradientView() {
+        gradient.inject(
+            colorOne: UIColor(red: 117.0/255.0, green: 63.0/255.0, blue: 79.0/255.0, alpha: 1.0),
+            colorTwo: UIColor(red: 34.0/255.0, green: 30.0/255.0, blue: 51.0/255.0, alpha: 1.0),
+            bounds: self.view.bounds
+        )
+        self.view.addSubview(gradient)
     }
 
 
