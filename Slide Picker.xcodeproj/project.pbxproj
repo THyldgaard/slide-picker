@@ -17,6 +17,10 @@
 		429F77312178C10A001455F0 /* Slide_PickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429F77302178C10A001455F0 /* Slide_PickerUITests.swift */; };
 		42B07E772178D2E300269FBA /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B07E762178D2E300269FBA /* Gradient.swift */; };
 		42B07E792178D36500269FBA /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B07E782178D36500269FBA /* GradientView.swift */; };
+		42B07E7C2178D5A100269FBA /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B07E7B2178D5A100269FBA /* UIColor+Extension.swift */; };
+		42B07E7F2178D91000269FBA /* open-sans.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42B07E7D2178D91000269FBA /* open-sans.regular.ttf */; };
+		42B07E802178D91000269FBA /* open-sans.bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42B07E7E2178D91000269FBA /* open-sans.bold.ttf */; };
+		42B07E842178D9C500269FBA /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B07E832178D9C500269FBA /* UIFont+Extension.swift */; };
 		56BEAE99BF29F950D5C380B6 /* Pods_Slide_Picker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5858E43A60A8FC535CBCB8A /* Pods_Slide_Picker.framework */; };
 		9D19A36ACF51454FB50742AE /* Pods_Slide_PickerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26306917B5F7D0AA69D8E6D1 /* Pods_Slide_PickerTests.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +60,10 @@
 		429F77322178C10A001455F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42B07E762178D2E300269FBA /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		42B07E782178D36500269FBA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		42B07E7B2178D5A100269FBA /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		42B07E7D2178D91000269FBA /* open-sans.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "open-sans.regular.ttf"; sourceTree = "<group>"; };
+		42B07E7E2178D91000269FBA /* open-sans.bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "open-sans.bold.ttf"; sourceTree = "<group>"; };
+		42B07E832178D9C500269FBA /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		4B125F2C14FAE6D46E298992 /* Pods-Slide Picker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slide Picker.release.xcconfig"; path = "Target Support Files/Pods-Slide Picker/Pods-Slide Picker.release.xcconfig"; sourceTree = "<group>"; };
 		69BA7ADFB3179C9D823DC449 /* Pods-Slide Picker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slide Picker.debug.xcconfig"; path = "Target Support Files/Pods-Slide Picker/Pods-Slide Picker.debug.xcconfig"; sourceTree = "<group>"; };
 		7DCD830DADC58EF001593D44 /* Pods_Slide_PickerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Slide_PickerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +126,7 @@
 		429F770F2178C105001455F0 /* Slide Picker */ = {
 			isa = PBXGroup;
 			children = (
+				42B07E7A2178D57200269FBA /* Utils */,
 				42B07E712178C84400269FBA /* Views */,
 				429F77102178C105001455F0 /* AppDelegate.swift */,
 				429F77122178C105001455F0 /* ViewController.swift */,
@@ -154,6 +163,33 @@
 				42B07E782178D36500269FBA /* GradientView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		42B07E7A2178D57200269FBA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				42B07E822178D92400269FBA /* Extensions */,
+				42B07E812178D91800269FBA /* Fonts */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		42B07E812178D91800269FBA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				42B07E7E2178D91000269FBA /* open-sans.bold.ttf */,
+				42B07E7D2178D91000269FBA /* open-sans.regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		42B07E822178D92400269FBA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				42B07E7B2178D5A100269FBA /* UIColor+Extension.swift */,
+				42B07E832178D9C500269FBA /* UIFont+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		463D44F2953D518D192066FA /* Pods */ = {
@@ -288,8 +324,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				429F771B2178C10A001455F0 /* LaunchScreen.storyboard in Resources */,
+				42B07E7F2178D91000269FBA /* open-sans.regular.ttf in Resources */,
 				429F77182178C10A001455F0 /* Assets.xcassets in Resources */,
 				429F77162178C105001455F0 /* Main.storyboard in Resources */,
+				42B07E802178D91000269FBA /* open-sans.bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,10 +443,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B07E842178D9C500269FBA /* UIFont+Extension.swift in Sources */,
 				429F77132178C105001455F0 /* ViewController.swift in Sources */,
 				429F77112178C105001455F0 /* AppDelegate.swift in Sources */,
 				42B07E792178D36500269FBA /* GradientView.swift in Sources */,
 				42B07E772178D2E300269FBA /* Gradient.swift in Sources */,
+				42B07E7C2178D5A100269FBA /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
